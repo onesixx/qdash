@@ -1,15 +1,15 @@
 # qdash
 
-# AlyxDash
+## AlyxDash
 AlyxDash is a Python package that does something really useful.
 
-## Installation
+### Installation
 You can install AlyxDash using pip:
 ```shell
 pip install -e .
 ```
 
-## Usage
+### Usage
 Here's an example of how to use AlyxDash:
 ```python
 import alyxdash
