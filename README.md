@@ -1,4 +1,6 @@
-# qdash
+---
+# <span style="color:blue"> qdash </span>
+---
 
 ## AlyxDash
 AlyxDash is a Python package that does something really useful.
@@ -13,30 +15,15 @@ pip install -e .
 Here's an example of how to use AlyxDash:
 ```python
 import alyxdash
+```
 
-# Do something with AlyxDash
-
-This README file includes a brief description of the package, instructions for installing and using the package, a section on contributing to the package, and a statement on the package's license.
-
-Feel free to modify the contents of the README file to suit your needs and to accurately describe your package's functionality.
-
+###  Do something with AlyxDash
+```shell
 pip install -r requirements.txt
-
-
-
-# dash-fasta
-based rusnyder / fastapi-plotly-dash
-
-# How to add a dash page
-> example> add menu stock plot
-## 1. Make a new folder(stock) and files
-- dashPages/stock
-- dashPages/stock/view.py
-- dashPages/stock/model.py
-- dashPages/stock/callbacks.py
-
+```
 ==================
 ## 2 Insert a view path to /ui/main.py    alyxdash/templates.py
+
 자동화 되어 skip가능.
 ```
 import dashPages.stock.view
@@ -81,3 +68,15 @@ def update_breadcrumbs( nClick1, nClick2, nClick3, nClick4, nClick5, nClick6, nC
 ```
 from dashPages.stock.callbacks import update_graph
 ```
+
+
+# dash-fasta
+based rusnyder / fastapi-plotly-dash
+
+# How to add a dash page
+> example> add menu stock plot
+## 1. Make a new folder(stock) and files
+- dashPages/stock
+- dashPages/stock/view.py
+- dashPages/stock/model.py
+- dashPages/stock/callbacks.py
