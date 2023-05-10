@@ -1,6 +1,4 @@
----
 # <span style="color:blue"> qdash </span>
----
 
 ## AlyxDash
 AlyxDash is a Python package that does something really useful.

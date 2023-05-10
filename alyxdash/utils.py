@@ -1,28 +1,35 @@
 # alyxdash/utils.py
 import pandas as pd
-
+import plotly.express as px
 
 def formatter_2_decimals(x):
     return "{:.2f}".format(x)
 
 
-def rleid(seq):
+def rleid(aserise):
+    # aserise = df[col]
     char = "sixx"
     group = 0
     result = []
-    for i in range(0, len(seq)):
-        if seq[i] == char:
+    for i in aserise.index:  # range(0, len(aserise)):
+        # i = 11
+        if aserise[i] == char:
             result.append(group)
         else:
             group = group + 1
             result.append(group)
-            char = seq[i]
+            char = aserise[i]
     return result
 
 
-def make_pdata_undup(df, col):
-    pdata = df[~(pd.Series(rleid(df[col])).duplicated(keep='first')) |
-               ~(pd.Series(rleid(df[col])).duplicated(keep='last'))]
+def make_pdata_undup(df, col, part=False):
+    # df = px.data.iris()
+    # col = "sepal_length"
+    uniqueIdx = ~(pd.Series(rleid(df[col])).duplicated(keep='first')) | \
+                ~(pd.Series(rleid(df[col])).duplicated(keep='last'))
+    pdata = df.loc[uniqueIdx.tolist()]
+    if part :
+        pdata = df.loc[:, [col]]
     return pdata
 
 
