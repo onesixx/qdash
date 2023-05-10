@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 
 from alyxdash import sidebar_icon, sidebar_header, navbar, content, footer, callbacks_template
 
-# from cathydash.sidebar import *
+# from alyxdash.sidebar import *
 # https://dash-bootstrap-components.opensource.faculty.ai/docs/
 # https://dash.plotly.com/dash-core-components
 

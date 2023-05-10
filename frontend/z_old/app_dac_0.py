@@ -2,8 +2,8 @@ import dash
 from dash import Dash, html, dcc
 import dash_admin_components as dac
 from templates import layout
-# import cathydash
-# from cathydash.templates import layout
+# import alyxdash
+# from alyxdash.templates import layout
 
 # from frontend.mainboard.view import navbar, sidebar, body, controlbar, footer
 # import pages
@@ -137,7 +137,7 @@ app_dash.layout = dac.Page([navbar, sidebar, body, controlbar, footer])
 # =============================================================================
 # Callback
 # =============================================================================
-# cathydash.callbacks.get_callbacks(app_dash)
+# alyxdash.callbacks.get_callbacks(app_dash)
 
 # pages.tab_cards.callbacks.get_callbacks(app_dash)
 # pages.basic_boxes.callbacks.get_callbacks(app_dash)

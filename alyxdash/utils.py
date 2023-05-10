@@ -58,3 +58,10 @@ def format_output(output):
     # implementation code here
     formatted_output = ...
     return formatted_output
+
+
+
+from pathlib import Path
+
+def get_project_root() -> Path:
+    return str(Path(__file__).parent.parent)

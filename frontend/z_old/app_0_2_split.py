@@ -2,8 +2,8 @@ import dash
 from dash import Input, Output, State, dcc, html
 import dash_bootstrap_components as dbc
 
-from cathydash import sidebar, navbar, content, footer, template_callbacks
-# from cathydash.sidebar import *
+from alyxdash import sidebar, navbar, content, footer, template_callbacks
+# from alyxdash.sidebar import *
 # https://dash-bootstrap-components.opensource.faculty.ai/docs/
 # https://dash.plotly.com/dash-core-components
 

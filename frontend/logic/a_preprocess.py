@@ -3,14 +3,14 @@ import pandas as pd
 import numpy as np
 import os
 
-from cathydash import DATA_DIRECTORY
+from alyxdash import DATA_DIRECTORY
 
 
 dataPath = DATA_DIRECTORY+'/issue_02'
 dataPath_pre = dataPath+'_pre'
 if not os.path.exists(dataPath_pre):
     os.makedirs(dataPath_pre)
-# dataPath = '/Users/onesixx/my/git/cathydash/data/issue_02'
+# dataPath = '/Users/onesixx/my/git/alyxdash/data/issue_02'
 files = os.listdir(dataPath)
 
 # 컬럼명

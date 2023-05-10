@@ -8,8 +8,8 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 
-from cathydash import DATA_DIRECTORY, COLOR_SCALE10
-from cathydash.utils import make_pdata_undup
+from alyxdash import DATA_DIRECTORY, COLOR_SCALE10
+from alyxdash.utils import make_pdata_undup
 
 import pickle
 

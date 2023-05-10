@@ -6,8 +6,8 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 
-from cathydash import DATA_DIRECTORY
-from cathydash.utils import make_pdata_undup
+from alyxdash import DATA_DIRECTORY
+from alyxdash.utils import make_pdata_undup
 
 import pickle
 
@@ -155,7 +155,7 @@ vol_channel56 = [f'ch{i+1:02d}_vol' for i in range(56)]
 colors = np.linspace(0, 1, 56)
 
 fig = px.scatter_3d(
-    data_tsne, 
+    data_tsne,
     x=data_tsne[:,0], y=data_tsne[:,1], z=data_tsne[:,2],
     color=vol_channel56
 )
@@ -167,7 +167,7 @@ t = np.linspace(0, 10, 50)
 x, y, z = np.cos(t), np.sin(t), t
 
 trace = go.Scatter3d(x=x, y=y, z=z,
-                   mode='markers') 
+                   mode='markers')
 
 fig = go.Figure(data=[go.Scatter3d(x=x, y=y, z=z,
                                    mode='markers')])

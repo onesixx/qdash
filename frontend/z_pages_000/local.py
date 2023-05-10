@@ -1,6 +1,6 @@
 # import base64
 # import io
-import cathydash
+import alyxdash
 
 import io
 import base64
@@ -16,4 +16,4 @@ import pandas as pd
 import plotly.graph_objs as go
 
 DATA_PATH = pathlib.Path(
-    cathydash.__path__[0]).parent.joinpath("data").resolve()
+    alyxdash.__path__[0]).parent.joinpath("data").resolve()
