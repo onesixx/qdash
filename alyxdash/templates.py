@@ -3,7 +3,7 @@ from dash import html, dcc
 import dash_bootstrap_components as dbc
 
 #import dash_admin_components as dac
-from bettydash.consts import MENU_ITEMS
+from alyxdash.consts import MENU_ITEMS
 
 
 def load_module(module_nm):

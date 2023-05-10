@@ -5,7 +5,7 @@ from alyxdash.consts import MENU_ITEMS
 
 from dash import dcc, html
 #from .templates import home_layout, page1_layout, page2_layout
-#from bettyboard.pages import home
+from alyxboard.pages import home
 
 
 def activate(input_id):
