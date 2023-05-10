@@ -37,7 +37,8 @@ import dash_bootstrap_components as dbc
 # ])
 
 content = html.Div(className="content", children=[
-    html.Div(id="page-content", className="container-fluid", children=[
+    html.Div(id="page-content", #className="container-fluid",
+             children=[
         # content_home
         dash.page_container
     ]),

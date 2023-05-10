@@ -49,8 +49,10 @@ main = html.Div(className="main-panel", children=[
     footer
 ])
 
-app.layout = dbc.Container(id="mybody", className="", fluid=True, children=[
-    html.Div(id="mybody_wrapper", className="wrapper", children=[
+app.layout = dbc.Container(id="mybody", className="", fluid=True,
+    children=[
+    html.Div(id="mybody_wrapper", className="wrapper",
+        children=[
         sidebar,
         main
     ])
@@ -59,4 +61,4 @@ app.layout = dbc.Container(id="mybody", className="", fluid=True, children=[
 callbacks_template(app)
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=8882)
+    app.run_server(debug=True, port=8883)
