@@ -17,7 +17,8 @@ app = dash.Dash(
     ],
     meta_tags=[
         # for desktop, notebook, tablelet, smartphone
-        {"name": "viewport", "content": "width=device-width, initial-scale=1"}
+        {"name": "viewport", 
+         "content": "width=device-width, initial-scale=1"}
     ],
     use_pages=True
 )
@@ -25,7 +26,7 @@ app = dash.Dash(
 server = app.server
 
 # sidebar
-sidebar = html.Div(className="sidebar", **{"data-color": "orange"}, children=[  #
+sidebar = html.Div(className="sidebar", **{"data-color": "orange"}, children=[  
     html.Div(className="sidebar-wrapper", children=[
         sidebar_header,
         # sidebar_user,

@@ -3,9 +3,12 @@ import dash
 from dash import Input, Output, State, dcc, html
 import dash_bootstrap_components as dbc
 
-sidebar_icon = ["nc-icon nc-chart-pie-35",
-                "fas fa-calendar-alt me-2",  "fas fa-envelope-open-text me-2"]
-
+sidebar_icon = [
+    "nc-icon nc-chart-pie-35",
+    "fas fa-calendar-alt me-2",  
+    "fas fa-envelope-open-text me-2",
+    "fas fa-car-battery"
+]
 
 sidebar_header = html.Div(className="logo", style={'display': 'flex',  'align-items': "center", "justify-content": "flex-start", }, children=[
     html.Img(src="../assets/img/logo_small.png",
